@@ -1,0 +1,104 @@
+@charset “UTF-8”;
+
+h1{
+	padding-top: 40px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	color: limegreen;
+}
+
+h2{
+	text-align: center;
+	color: darkblue;
+	font-size: 25px;
+}
+p{
+	text-align: justify;
+	color: black;
+	font-size: 20px;
+	text-indent: 20px;
+	font-family: 'bebas neue',sans-serif;
+}
+.fim{
+	text-align: center;
+	font-weight: bold;
+}
+.noronha {
+  text-align: center;
+  color: black;
+  padding: 20px;
+  margin-top: 5px;
+  background: linear-gradient(to right, lightgreen, darkgreen); /* Degradê de cor para a seção Noronha */
+}
+
+.rio {
+  text-align: center;
+  color: dark;
+  padding: 20px;
+  margin-top: 5px;
+  background: linear-gradient(to right, lightblue, darkblue); /* Degradê de cor para a seção Rio */
+}
+.tituloh2{
+			background: linear-gradient(to right, lightskyblue, darkgreen); /* Degradê de cor para a seção Noronha */
+}
+
+body{
+	background-image: url(fotos/fundo1.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+img{
+	width: 350px;
+	height: 350px;
+	border: 8px solid limegreen;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.foto2{
+	border: 8px solid lightblue;
+	border-radius: 10px;
+}
+
+.galeria{
+	display: flex; /*transforma o contêiner em um flex container.*/
+  	justify-content: center; /* centraliza os itens */
+	gap: 40px; /* espaço entre as imagens */
+  	flex-wrap: wrap; /* para que fiquem em coluna em telas pequenas */
+  	margin-top: 20px; /*adiciona um espaço de 20px acima do containe*/
+}
+.menu {
+  background-color: darkblue;
+  padding: 10px 0;
+  position: fixed; /* fica fixo no topo da tela */
+  width: 100%; /* ocupa toda a largura da tela */
+  top: 0; /* gruda no topo */
+  z-index: 1000; /* garante que fique por cima de outros elementos */
+}
+.menu ul {
+  list-style: none; /* tira as bolinhas da lista */
+  display: flex; /* coloca os itens lado a lado (em linha) */
+  justify-content: center; /* centraliza os itens horizontalmente */
+  margin: 0;
+  padding: 0;
+  gap: 50px; /* adiciona espaço entre os itens do menu */
+}
+.menu li {
+  display: inline;
+}
+.menu a {
+  text-decoration: none; /* tira o sublinhado do link */
+  color: white; /* cor do texto */
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif; /* fonte estilizada */
+  padding: 8px 16px; /* espaço dentro dos botões */
+  transition: background-color 0.3s, color 0.3s; /* suaviza o efeito de hover */
+}
+.menu a:hover {
+  background-color: white; /* fundo branco no hover */
+  color: limegreen; /* texto fica vermelho escuro */
+  border-radius: 5px; /* cantos arredondados */
+}
